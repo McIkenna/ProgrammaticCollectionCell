@@ -58,7 +58,6 @@ class ViewController: UIViewController, UICollectionViewDataSource{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionView", for: indexPath) as UICollectionViewCell
         let title = UILabel(frame: CGRect(x: 0, y: 0, width: cell.bounds.size.width, height: 50))
         title.text = self.itemsToLoad[indexPath.row]
-        title.font = UIFont(name: "AvenirNext-Bold", size: 15)
         title.textAlignment = .center
         title.textColor = .white
         cell.backgroundColor = self.randColor()
