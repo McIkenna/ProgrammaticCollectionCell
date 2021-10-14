@@ -10,7 +10,6 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDataSource{
     
     
-    var label : UILabel = UILabel()
     var itemsToLoad : [String] =  ["Marmalade",
                                    "Ham",
                                    "Egg",
@@ -39,9 +38,6 @@ class ViewController: UIViewController, UICollectionViewDataSource{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    
-   
         let flowLayout = UICollectionViewFlowLayout()
             flowLayout.itemSize = CGSize(width: 100, height: 100 )
         let myCollectionView = UICollectionView(frame:view.frame, collectionViewLayout: flowLayout)
